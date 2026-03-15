@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls app/ app/'\\(auth\\)'/ app/'\\(tabs\\)'/ lib/ lib/api/ lib/utils/)",
+      "Bash(find 'C:\\\\Users\\\\linsh\\\\OneDrive - Delft University of Technology\\\\Vibe_coding_project\\\\Lunchbox.ai' -name *.json -o -name *.ts -o -name *.tsx -o -name *.js)",
+      "Bash(npx create-expo-app@latest LunchboxApp --template blank-typescript)",
+      "Bash(npx expo:*)",
+      "Bash(mkdir -p app/\\\\\\(tabs\\\\\\))",
+      "Bash(mkdir -p components)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

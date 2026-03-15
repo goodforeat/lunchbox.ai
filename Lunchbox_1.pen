@@ -4,8 +4,8 @@
     {
       "type": "frame",
       "id": "vkxNh",
-      "x": 394,
-      "y": 2273,
+      "x": -277,
+      "y": 2846,
       "name": "Task Review",
       "clip": true,
       "width": 402,
@@ -217,8 +217,8 @@
     {
       "type": "frame",
       "id": "02IV1",
-      "x": 416,
-      "y": 1812,
+      "x": -255,
+      "y": 2385,
       "name": "Shopping List",
       "width": "fill_container(354)",
       "layout": "vertical",
@@ -7296,19 +7296,6 @@
       ]
     },
     {
-      "type": "text",
-      "id": "UICbJ",
-      "x": 0,
-      "y": 2633,
-      "name": "flowLabel",
-      "fill": "#18181B",
-      "content": "AI Meal Planning Flow",
-      "fontFamily": "Inter",
-      "fontSize": 32,
-      "fontWeight": "700",
-      "letterSpacing": -0.5
-    },
-    {
       "type": "frame",
       "id": "tZPKi",
       "x": 1429,
@@ -10020,8 +10007,8 @@
     {
       "type": "text",
       "id": "Iwk7b",
-      "x": 552,
-      "y": 2653,
+      "x": -119,
+      "y": 3226,
       "name": "lbl2",
       "fill": "#18181B",
       "content": "2 · Loading",
@@ -11545,7 +11532,7 @@
       "type": "frame",
       "id": "tCPzE",
       "x": 1429,
-      "y": 3986,
+      "y": 3968,
       "name": "Flow – After pressing Suggestions",
       "clip": true,
       "width": 402,
@@ -12274,6 +12261,308 @@
                   "fontWeight": "600"
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Q1nUK",
+      "x": 962,
+      "y": 1358,
+      "name": "Login",
+      "width": 402,
+      "height": 852,
+      "fill": "#F5F5F5",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "m8C8l",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            0,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "o92Cu",
+              "name": "timeLabel",
+              "fill": "#1C1C1E",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "CoLl9",
+              "name": "statusIcons",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "HRCB4",
+                  "name": "signalIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "signal",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1C1C1E"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "oU569",
+                  "name": "wifiIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "wifi",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1C1C1E"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "69xhM",
+                  "name": "batteryIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "battery-full",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1C1C1E"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Sy7iz",
+          "name": "Content Area",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            0,
+            32,
+            80,
+            32
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cnTRU",
+              "name": "Logo Section",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FoiuF",
+                  "name": "Logo Circle",
+                  "width": 96,
+                  "height": 96,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1773398079034.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "UsQwZ",
+                      "name": "chefIcon",
+                      "width": 48,
+                      "height": 48,
+                      "iconFontName": "chef-hat",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "3S0Je",
+                  "name": "brandName",
+                  "fill": "#1C1C1E",
+                  "content": "Lunchbox.ai",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "JepnI",
+                  "name": "tagline",
+                  "fill": "#8E8E93",
+                  "content": "Your AI-powered meal planner",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "6MxsB",
+              "name": "Google Sign In Button",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "#FFFFFF",
+              "cornerRadius": 16,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E5EA"
+              },
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#0000000A",
+                "offset": {
+                  "x": 0,
+                  "y": 2
+                },
+                "blur": 8
+              },
+              "gap": 12,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BBpmX",
+                  "name": "googleLogoContainer",
+                  "width": 24,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SXXDo",
+                      "name": "googleG",
+                      "fill": "#4285F4",
+                      "content": "G",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "PKbTK",
+                  "name": "googleBtnText",
+                  "fill": "#1C1C1E",
+                  "content": "Continue with Google",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "02wj9",
+              "name": "Divider Row",
+              "width": "fill_container",
+              "height": 20,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "RNORo",
+                  "name": "divLine1",
+                  "fill": "#E5E5EA",
+                  "width": "fill_container",
+                  "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "88F3D",
+                  "name": "divText",
+                  "fill": "#C7C7CC",
+                  "content": "or",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "rectangle",
+                  "id": "0rQFa",
+                  "name": "divLine2",
+                  "fill": "#E5E5EA",
+                  "width": "fill_container",
+                  "height": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4ftAR",
+              "name": "Email Sign In Button",
+              "width": "fill_container",
+              "height": 56,
+              "fill": "#1C1C1E",
+              "cornerRadius": 16,
+              "gap": 10,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "3eI1A",
+                  "name": "emailIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "mail",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "type": "text",
+                  "id": "Ce3Bc",
+                  "name": "emailBtnText",
+                  "fill": "#FFFFFF",
+                  "content": "Continue with Email",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "lOfb4",
+              "name": "termsText",
+              "fill": "#C7C7CC",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "By continuing, you agree to our Terms of Service and Privacy Policy",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
             }
           ]
         }
