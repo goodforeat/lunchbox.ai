@@ -76,7 +76,7 @@ const MEALS: MealCardData[] = [
 ];
 
 function ShoppingListCard() {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const [items, setItems] = useState(SHOPPING_ITEMS);
 
   const checkedCount = items.filter((i) => i.checked).length;
@@ -172,7 +172,7 @@ function ShoppingListCard() {
 
 function MealCard({ meal }: { meal: MealCardData }) {
   const isCooking = meal.subtitle.includes('cooking');
-  const [expanded, setExpanded] = useState(meal.title === 'Overnight Oats');
+  const [expanded, setExpanded] = useState(false);
 
   const HeaderWrapper = isCooking ? TouchableOpacity : View;
 
@@ -272,7 +272,7 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     paddingHorizontal: 24,
-    paddingBottom: 24,
+    paddingBottom: 110,
     gap: 32,
   },
   statusBar: {

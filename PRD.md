@@ -1,9 +1,9 @@
 # Product Requirements Document
 ## Lunchbox.ai — AI-Powered Meal Planner
 
-**Version:** 1.0
+**Version:** 1.1
 **Date:** 2026-03-15
-**Platform:** Mobile (iOS / Android)
+**Platform:** Mobile (iOS / Android) · Web
 
 ---
 
@@ -102,6 +102,7 @@ The app uses a **bottom pill-shaped tab bar** with 4 tabs:
 - FR-2.6: Meal cards whose subtitle contains "cooking" are expandable — tapping toggles a detail panel showing **Ingredients** and **Steps**
 - FR-2.7: Meal cards whose subtitle contains "microwaving" are **not expandable** — the chevron icon is hidden and the card header is non-interactive
 - FR-2.8: The expanded panel displays an **Ingredients** section (bulleted list) followed by a **Steps** section (numbered list), separated from the header by a divider line
+- FR-2.9: All cards (Shopping List and all Meal cards) default to **collapsed** state on initial load after login
 
 ---
 
@@ -285,7 +286,26 @@ The Chef tab drives the core AI feature. It is a 5-step flow.
 
 ---
 
-## 6. AI & Backend Requirements
+## 6. FAB (Floating Action Button) Positioning Rule
+
+All FAB buttons across the app **must** use `position: absolute` and be anchored a fixed distance above the bottom tab bar. They must never be placed inside a normal-flow container (e.g. a bottom bar `View`), as this causes them to be obscured by the absolutely-positioned tab bar.
+
+| Property | Value |
+|----------|-------|
+| Position | `position: 'absolute'` |
+| Bottom offset | `bottom: 110` (clears the floating tab bar + safe area) |
+| Right offset | `right: 24` |
+| Size | `56 × 56 px`, `borderRadius: 28` |
+| Background | `#52525B` |
+
+**Requirements:**
+- FR-FAB-1: Every FAB must use `position: absolute` — never a static/flow element
+- FR-FAB-2: `bottom` value must always clear the tab bar height (`62px pill + 21px padding + ~21px safe area ≈ 104px`); use `bottom: 110` as the standard value
+- FR-FAB-3: This rule applies to all screens in all flows (Chef Flow 1–5, and any future screens with FABs)
+
+---
+
+## 7. AI & Backend Requirements
 
 | ID | Requirement |
 |----|-------------|
@@ -317,7 +337,26 @@ The Chef tab drives the core AI feature. It is a 5-step flow.
 
 ---
 
-## 8. Out of Scope (v1.0)
+## 8. Responsive Design (RWD)
+
+The app supports web deployment in addition to native iOS/Android. The following rules apply to web rendering:
+
+| 瀏覽器寬度 | 行為 |
+|-----------|------|
+| > 390px（桌面） | 內容置中，限制於 **390px** 寬的手機比例框內；框外背景為 `#D1D5DB` |
+| ≤ 390px（手機瀏覽器） | 全寬顯示，無外框，背景 `#F7F7F8` |
+| iOS / Android 原生 | 不套用任何 web 限制，正常全螢幕渲染 |
+
+**Requirements:**
+- FR-RWD-1: On web, all content must be constrained to a maximum width of **390px**, centered horizontally in the viewport
+- FR-RWD-2: When viewport > 390px, the area outside the content frame displays a neutral background (`#D1D5DB`) to visually indicate the phone boundary
+- FR-RWD-3: When viewport ≤ 390px, content fills the full width (no external frame)
+- FR-RWD-4: Native app behaviour is unaffected by web RWD rules — the constraint is applied only when `Platform.OS === 'web'`
+- FR-RWD-5: Content that overflows the 390px frame is clipped (`overflow: hidden`) to prevent layout breakage
+
+---
+
+## 9. Out of Scope (v1.0)
 
 - Social / sharing features (sharing to friends)
 - Nutrition tracking / calorie counting
@@ -327,7 +366,7 @@ The Chef tab drives the core AI feature. It is a 5-step flow.
 
 ---
 
-## 9. Open Questions
+## 10. Open Questions
 
 1. What is the exact list of default popular suggestion chips? Are they static or personalized?
 2. Does the app support multiple dietary profiles per account (e.g., family members)?

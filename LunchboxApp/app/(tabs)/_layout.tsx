@@ -43,7 +43,16 @@ function CustomTabBar({ state, navigation }: BottomTabBarProps) {
 export default function TabLayout() {
   return (
     <Tabs
-      screenOptions={{ headerShown: false }}
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          position: 'absolute',
+          backgroundColor: 'transparent',
+          borderTopWidth: 0,
+          elevation: 0,
+          shadowOpacity: 0,
+        },
+      }}
       tabBar={(props) => <CustomTabBar {...props} />}
     >
       <Tabs.Screen name="index" />
@@ -55,11 +64,14 @@ export default function TabLayout() {
 }
 
 const styles = StyleSheet.create({
-  // 對應 .pen 的 tabBar2：padding [0, 21, 21, 21]
+  // 對應 .pen 的 tabBar2：padding [0, 21, 21, 21]，絕對定位懸浮於底部
   container: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
     paddingHorizontal: 21,
     paddingBottom: 21,
-    backgroundColor: 'transparent',
   },
   // 對應 .pen 的 Pill：height 62, padding 4, borderRadius 100
   pill: {

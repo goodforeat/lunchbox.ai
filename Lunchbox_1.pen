@@ -9,7 +9,11 @@
       "name": "Task Review",
       "clip": true,
       "width": 402,
-      "fill": "#F7F7F8",
+      "fill": {
+        "type": "color",
+        "color": "#F7F7F8",
+        "enabled": false
+      },
       "layout": "vertical",
       "children": [
         {
@@ -1234,7 +1238,11 @@
           "name": "Task Review",
           "clip": true,
           "width": 402,
-          "fill": "#F7F7F8",
+          "fill": {
+            "type": "color",
+            "color": "#F7F7F8",
+            "enabled": false
+          },
           "layout": "vertical",
           "children": [
             {
@@ -1444,7 +1452,7 @@
     {
       "type": "frame",
       "id": "eSDAW",
-      "x": 1429,
+      "x": 1009,
       "y": 1358,
       "name": "Home_2_calender_exapanded",
       "clip": true,
@@ -2540,7 +2548,6 @@
           "name": "Task Review",
           "clip": true,
           "width": 402,
-          "fill": "#F7F7F8",
           "layout": "vertical",
           "children": [
             {
@@ -2560,6 +2567,7 @@
                   "type": "frame",
                   "id": "4PqdE",
                   "name": "tabGradient",
+                  "enabled": false,
                   "width": "fill_container",
                   "height": 20,
                   "fill": {
@@ -9321,149 +9329,6 @@
             },
             {
               "type": "frame",
-              "id": "zCoBk",
-              "name": "Ingredients",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 12,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "2GH64",
-                  "name": "ingredTitle",
-                  "fill": "#71717A",
-                  "content": "INGREDIENTS",
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "600",
-                  "letterSpacing": 1
-                },
-                {
-                  "type": "frame",
-                  "id": "M9pKf",
-                  "name": "ingredList",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "Tex7K",
-                      "name": "ing1",
-                      "width": "fill_container",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "ellipse",
-                          "id": "m7yhO",
-                          "name": "ing1dot",
-                          "fill": "#3F3F46",
-                          "width": 6,
-                          "height": 6
-                        },
-                        {
-                          "type": "text",
-                          "id": "91Etl",
-                          "name": "ing1txt",
-                          "fill": "#3F3F46",
-                          "content": "500g Chicken thigh",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "zHswX",
-                      "name": "ing2",
-                      "width": "fill_container",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "ellipse",
-                          "id": "rM4Bs",
-                          "name": "ing2dot",
-                          "fill": "#3F3F46",
-                          "width": 6,
-                          "height": 6
-                        },
-                        {
-                          "type": "text",
-                          "id": "hbAXU",
-                          "name": "ing2txt",
-                          "fill": "#3F3F46",
-                          "content": "400ml Coconut milk",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "7NB6U",
-                      "name": "ing3",
-                      "width": "fill_container",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "ellipse",
-                          "id": "lVGok",
-                          "name": "ing3dot",
-                          "fill": "#3F3F46",
-                          "width": 6,
-                          "height": 6
-                        },
-                        {
-                          "type": "text",
-                          "id": "V4ic7",
-                          "name": "ing3txt",
-                          "fill": "#3F3F46",
-                          "content": "3 tbsp Green curry paste",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "UENMb",
-                      "name": "ing4",
-                      "width": "fill_container",
-                      "gap": 10,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "ellipse",
-                          "id": "0Noux",
-                          "name": "ing4dot",
-                          "fill": "#3F3F46",
-                          "width": 6,
-                          "height": 6
-                        },
-                        {
-                          "type": "text",
-                          "id": "HPgon",
-                          "name": "ing4txt",
-                          "fill": "#3F3F46",
-                          "content": "150g Thai basil & vegetables",
-                          "fontFamily": "Inter",
-                          "fontSize": 14,
-                          "fontWeight": "normal"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
               "id": "6T5YI",
               "name": "Shopping List",
               "width": "fill_container",
@@ -9608,6 +9473,149 @@
                           "content": "Thai basil & vegetables (1 bag)",
                           "fontFamily": "Inter",
                           "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zCoBk",
+              "name": "Ingredients",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2GH64",
+                  "name": "ingredTitle",
+                  "fill": "#71717A",
+                  "content": "INGREDIENTS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "M9pKf",
+                  "name": "ingredList",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Tex7K",
+                      "name": "ing1",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "m7yhO",
+                          "name": "ing1dot",
+                          "fill": "#3F3F46",
+                          "width": 6,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "91Etl",
+                          "name": "ing1txt",
+                          "fill": "#3F3F46",
+                          "content": "500g Chicken thigh",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zHswX",
+                      "name": "ing2",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "rM4Bs",
+                          "name": "ing2dot",
+                          "fill": "#3F3F46",
+                          "width": 6,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "hbAXU",
+                          "name": "ing2txt",
+                          "fill": "#3F3F46",
+                          "content": "400ml Coconut milk",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7NB6U",
+                      "name": "ing3",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "lVGok",
+                          "name": "ing3dot",
+                          "fill": "#3F3F46",
+                          "width": 6,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "V4ic7",
+                          "name": "ing3txt",
+                          "fill": "#3F3F46",
+                          "content": "3 tbsp Green curry paste",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UENMb",
+                      "name": "ing4",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "0Noux",
+                          "name": "ing4dot",
+                          "fill": "#3F3F46",
+                          "width": 6,
+                          "height": 6
+                        },
+                        {
+                          "type": "text",
+                          "id": "HPgon",
+                          "name": "ing4txt",
+                          "fill": "#3F3F46",
+                          "content": "150g Thai basil & vegetables",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
                           "fontWeight": "normal"
                         }
                       ]
@@ -10807,41 +10815,6 @@
                               "width": "fill_container",
                               "height": 30,
                               "content": "Avocado Toast",
-                              "textAlign": "center",
-                              "textAlignVertical": "middle",
-                              "fontFamily": "Inter",
-                              "fontSize": 11,
-                              "fontWeight": "600"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "r1o3C",
-                          "width": "fill_container",
-                          "height": 36,
-                          "cornerRadius": 8,
-                          "stroke": {
-                            "thickness": 1.5,
-                            "fill": "#71717A"
-                          },
-                          "layout": "vertical",
-                          "gap": 2,
-                          "padding": [
-                            0,
-                            4
-                          ],
-                          "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "eWsot",
-                              "fill": "#3F3F46",
-                              "textGrowth": "fixed-width-height",
-                              "width": "fill_container",
-                              "height": 30,
-                              "content": "Thai Green Curry Chicken",
                               "textAlign": "center",
                               "textAlignVertical": "middle",
                               "fontFamily": "Inter",
@@ -12269,7 +12242,7 @@
     {
       "type": "frame",
       "id": "Q1nUK",
-      "x": 962,
+      "x": 550,
       "y": 1358,
       "name": "Login",
       "width": 402,
@@ -12563,6 +12536,1436 @@
               "fontFamily": "Inter",
               "fontSize": 11,
               "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RgDQg",
+      "x": 1427,
+      "y": 1358,
+      "name": "Home_2_recipt_exapanded",
+      "clip": true,
+      "width": 402,
+      "fill": "#F7F7F8",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "fkZHG",
+          "name": "Status Bar",
+          "width": "fill_container",
+          "height": 62,
+          "padding": [
+            21,
+            24,
+            19,
+            24
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "rpwgO",
+              "name": "timeText3",
+              "fill": "#3F3F46",
+              "content": "9:41",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "YJi8I",
+              "name": "iconsGroup3",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "ul9k7",
+                  "name": "sig3",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "signal",
+                  "iconFontFamily": "lucide",
+                  "fill": "#3F3F46"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "aTIWZ",
+                  "name": "wif3",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "wifi",
+                  "iconFontFamily": "lucide",
+                  "fill": "#3F3F46"
+                },
+                {
+                  "type": "icon_font",
+                  "id": "A7ZBo",
+                  "name": "bat3",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "battery-full",
+                  "iconFontFamily": "lucide",
+                  "fill": "#3F3F46"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "y0pED",
+          "name": "Content",
+          "width": "fill_container",
+          "height": 1065,
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            0,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gE0sT",
+              "name": "newRecipeList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FrSgF",
+                  "name": "ShoppingCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1.5,
+                    "fill": "#E4E4E7"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000D",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 3
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "F6W8R",
+                      "name": "shopHeader",
+                      "width": "fill_container",
+                      "padding": [
+                        14,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "L51X0",
+                          "name": "shopCountRow",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "n9XnD",
+                              "name": "shopIconBg",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "#E4E4E7",
+                              "cornerRadius": 10,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "GlDaO",
+                                  "name": "shopIcon",
+                                  "width": 18,
+                                  "height": 18,
+                                  "iconFontName": "shopping-cart",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "#71717A"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "K6eUP",
+                              "name": "shopTextCol",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "klI8z",
+                                  "name": "shopTitle",
+                                  "fill": "#3F3F46",
+                                  "content": "Shopping List",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "b7Jxf",
+                                  "name": "shopSub",
+                                  "fill": "#71717A",
+                                  "content": "5 items · 1 checked",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "SyC3Z",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "chevron-up",
+                          "iconFontFamily": "lucide",
+                          "fill": "#71717A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "N0e4A",
+                      "name": "divider",
+                      "fill": "#E4E4E7",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iajeI",
+                      "name": "itemList",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "g8WWY",
+                          "name": "row1",
+                          "width": "fill_container",
+                          "gap": 14,
+                          "padding": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "JlH2F",
+                              "name": "chk1",
+                              "width": 24,
+                              "height": 24,
+                              "fill": "#3F3F46",
+                              "cornerRadius": 6,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "ppmAF",
+                                  "name": "chkIcon1",
+                                  "width": 14,
+                                  "height": 14,
+                                  "iconFontName": "check",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "#FFFFFF"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "iHxZ9",
+                              "name": "info1",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "VDMWh",
+                                  "name": "name1",
+                                  "fill": "#A1A1AA",
+                                  "content": "Chicken breast",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "bAy2D",
+                                  "name": "meta1",
+                                  "fill": "#A1A1AA",
+                                  "content": "500g · Protein",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "pYvbe",
+                          "name": "div1",
+                          "fill": "#E4E4E7",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "60QQ6",
+                          "name": "row2",
+                          "width": "fill_container",
+                          "gap": 14,
+                          "padding": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Cqmp8",
+                              "name": "chk2",
+                              "width": 24,
+                              "height": 24,
+                              "cornerRadius": 6,
+                              "stroke": {
+                                "thickness": 1.5,
+                                "fill": "#E4E4E7"
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "UmMNy",
+                              "name": "info2",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "pq5tA",
+                                  "name": "name2",
+                                  "fill": "#3F3F46",
+                                  "content": "Quinoa",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "GNWEA",
+                                  "name": "meta2",
+                                  "fill": "#A1A1AA",
+                                  "content": "200g · Grains",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "bC3Ml",
+                          "name": "div2",
+                          "fill": "#E4E4E7",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "XzI7v",
+                          "name": "row3",
+                          "width": "fill_container",
+                          "gap": 14,
+                          "padding": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "UTf4P",
+                              "name": "chk3",
+                              "width": 24,
+                              "height": 24,
+                              "cornerRadius": 6,
+                              "stroke": {
+                                "thickness": 1.5,
+                                "fill": "#E4E4E7"
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WGnnu",
+                              "name": "info3",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "fIc2C",
+                                  "name": "name3",
+                                  "fill": "#3F3F46",
+                                  "content": "Bell peppers",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "hd6r9",
+                                  "name": "meta3",
+                                  "fill": "#A1A1AA",
+                                  "content": "3 pcs · Vegetables",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "q2x5j",
+                          "name": "div3",
+                          "fill": "#E4E4E7",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ByqZm",
+                          "name": "row4",
+                          "width": "fill_container",
+                          "gap": 14,
+                          "padding": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "vfpWf",
+                              "name": "chk4",
+                              "width": 24,
+                              "height": 24,
+                              "cornerRadius": 6,
+                              "stroke": {
+                                "thickness": 1.5,
+                                "fill": "#E4E4E7"
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "r63V2",
+                              "name": "info4",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "kkJ0O",
+                                  "name": "name4",
+                                  "fill": "#3F3F46",
+                                  "content": "Fresh herbs (thyme, rosemary)",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Aq2QV",
+                                  "name": "meta4",
+                                  "fill": "#A1A1AA",
+                                  "content": "1 bunch · Herbs",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "OpPG5",
+                          "name": "div4",
+                          "fill": "#E4E4E7",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TBXym",
+                          "name": "row5",
+                          "width": "fill_container",
+                          "gap": 14,
+                          "padding": 16,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Iix8s",
+                              "name": "chk5",
+                              "width": 24,
+                              "height": 24,
+                              "cornerRadius": 6,
+                              "stroke": {
+                                "thickness": 1.5,
+                                "fill": "#E4E4E7"
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "DAFKY",
+                              "name": "info5",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "HTUQI",
+                                  "name": "name5",
+                                  "fill": "#3F3F46",
+                                  "content": "Lemon",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "500"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "9z5JO",
+                                  "name": "meta5",
+                                  "fill": "#A1A1AA",
+                                  "content": "2 pcs · Citrus",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ygO0q",
+                      "name": "footer",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": [
+                        12,
+                        16,
+                        16,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "AUtQ3",
+                          "name": "progressRow",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "3SrEc",
+                              "name": "progressLabel",
+                              "fill": "#71717A",
+                              "content": "1 of 5 completed",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "eXvfo",
+                              "name": "progressPct",
+                              "fill": "#71717A",
+                              "content": "20%",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QQhig",
+                          "name": "progressBg",
+                          "width": "fill_container",
+                          "height": 6,
+                          "fill": "#E4E4E7",
+                          "cornerRadius": 3,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 3,
+                              "id": "lh1Bc",
+                              "name": "progressFill",
+                              "fill": "#3F3F46",
+                              "width": 64,
+                              "height": 6
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "8xpNO",
+              "name": "newRecipeList",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hDm4f",
+                  "name": "mealsHdr",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eqDIV",
+                      "name": "mealsTitle",
+                      "fill": "#3F3F46",
+                      "content": "Today's meal prep",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ogwLK",
+                      "name": "mealsSub",
+                      "fill": "#71717A",
+                      "content": "1,280 kcal",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "F8MOE",
+                  "name": "bfCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1.5,
+                    "fill": "#E4E4E7"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000D",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 3
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Odfr2",
+                      "name": "bfHeader",
+                      "width": "fill_container",
+                      "padding": [
+                        14,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "IRbtC",
+                          "name": "bfLeft",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "sP5nH",
+                              "name": "bfLeft",
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "5wqDK",
+                                  "name": "bfIconBg",
+                                  "width": 36,
+                                  "height": 36,
+                                  "fill": "#E4E4E7",
+                                  "cornerRadius": 10,
+                                  "layout": "vertical",
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "icon_font",
+                                      "id": "sGbx4",
+                                      "width": 18,
+                                      "height": 18,
+                                      "iconFontName": "cooking-pot",
+                                      "iconFontFamily": "lucide",
+                                      "fill": "#71717A"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "imCfA",
+                                  "name": "bfInfo",
+                                  "layout": "vertical",
+                                  "gap": 2,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "hOAd7",
+                                      "fill": "#3F3F46",
+                                      "content": "Overnight Oats",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 15,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "2w3hy",
+                                      "fill": "#71717A",
+                                      "content": "10 min cooking",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "aC2uI",
+                                      "fill": "#71717A",
+                                      "content": "1/1",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "fKxkh",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "chevron-up",
+                          "iconFontFamily": "lucide",
+                          "fill": "#71717A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "0Eh3c",
+                      "fill": "#E4E4E7",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UbikB",
+                      "name": "bfContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        16,
+                        16,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Yiq2X",
+                          "fill": "#3F3F46",
+                          "content": "Ingredients",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TJhx5",
+                          "fill": "#52525B",
+                          "content": "• Rolled oats — 80g",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wERiM",
+                          "fill": "#52525B",
+                          "content": "• Mixed berries — 100g",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CLv1Q",
+                          "fill": "#52525B",
+                          "content": "• Almond milk — 200ml · Honey to taste",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dt3kT",
+                          "fill": "#3F3F46",
+                          "content": "Steps",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wuwDx",
+                          "fill": "#52525B",
+                          "content": "1. Bring almond milk to a gentle simmer",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "1ATl4",
+                          "fill": "#52525B",
+                          "content": "2. Stir in oats and cook for 5 minutes",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XlQEN",
+                          "fill": "#52525B",
+                          "content": "3. Top with mixed berries and a drizzle of honey",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "deyTC",
+                  "name": "lunchCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1.5,
+                    "fill": "#E4E4E7"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000D",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 3
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NFtLS",
+                      "name": "lunchHeader",
+                      "width": "fill_container",
+                      "padding": [
+                        14,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "KxTvP",
+                          "name": "lunchLeft",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "BTTb0",
+                              "name": "lunchIconBg",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "#E4E4E7",
+                              "cornerRadius": 10,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "4ry1i",
+                                  "width": 18,
+                                  "height": 18,
+                                  "iconFontName": "microwave",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "#71717A"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "MJnFI",
+                              "name": "lunchInfo",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "QQ1Tw",
+                                  "fill": "#3F3F46",
+                                  "content": "Grilled Chicken Bowl",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "6oEPb",
+                                  "fill": "#71717A",
+                                  "content": "3 min microwaving",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "LmBoq",
+                                  "fill": "#71717A",
+                                  "content": "3/4",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "6dal0",
+                  "name": "lunchCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1.5,
+                    "fill": "#E4E4E7"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000000D",
+                    "offset": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "blur": 3
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vghU7",
+                      "name": "lunchHeader",
+                      "width": "fill_container",
+                      "padding": [
+                        14,
+                        16
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yCdqA",
+                          "name": "lunchLeft",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "dTqvY",
+                              "name": "lunchIconBg",
+                              "width": 36,
+                              "height": 36,
+                              "fill": "#E4E4E7",
+                              "cornerRadius": 10,
+                              "layout": "vertical",
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "LTQCY",
+                                  "width": 18,
+                                  "height": 18,
+                                  "iconFontName": "cooking-pot",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "#71717A"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "cMox3",
+                              "name": "lunchInfo",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "B9kne",
+                                  "fill": "#3F3F46",
+                                  "content": "Thai Green Curry Chicken",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 15,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "KuhiO",
+                                  "fill": "#71717A",
+                                  "content": "25 min cooking",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "MwQSh",
+                                  "fill": "#71717A",
+                                  "content": "1/4",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "kk4kh",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "chevron-up",
+                          "iconFontFamily": "lucide",
+                          "fill": "#71717A"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "bBM1V",
+                      "name": "divider",
+                      "fill": "#E4E4E7",
+                      "width": "fill_container",
+                      "height": 1
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SyIVX",
+                      "name": "curryContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        16,
+                        16,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Q4UpV",
+                          "name": "i1",
+                          "fill": "#3F3F46",
+                          "content": "Ingredients",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qXI87",
+                          "name": "i2",
+                          "fill": "#52525B",
+                          "content": "• Thai green curry paste — 3 tbsp",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EghGO",
+                          "name": "i3",
+                          "fill": "#52525B",
+                          "content": "• Chicken thighs — 500g",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WdVHs",
+                          "name": "i4",
+                          "fill": "#52525B",
+                          "content": "• Coconut milk — 400ml",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NUucG",
+                          "name": "i5",
+                          "fill": "#52525B",
+                          "content": "• Thai basil — 1 handful",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AGGPv",
+                          "name": "s0",
+                          "fill": "#3F3F46",
+                          "content": "Steps",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nEdwW",
+                          "name": "s1",
+                          "fill": "#52525B",
+                          "content": "1. Heat oil in pan, fry curry paste for 2 minutes",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nGnw8",
+                          "name": "s2",
+                          "fill": "#52525B",
+                          "content": "2. Add chicken, cook until sealed on all sides",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZaDJg",
+                          "name": "s3",
+                          "fill": "#52525B",
+                          "content": "3. Pour in coconut milk, simmer for 15 minutes",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YA06d",
+                          "name": "s4",
+                          "fill": "#52525B",
+                          "content": "4. Stir in Thai basil and serve",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "J1qCI",
+          "name": "Task Review",
+          "clip": true,
+          "width": 402,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "2nNUL",
+              "name": "tabBar2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                0,
+                21,
+                21,
+                21
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o9oIs",
+                  "name": "tabGradient",
+                  "enabled": false,
+                  "width": "fill_container",
+                  "height": 20,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#F7F7F800",
+                        "position": 0
+                      },
+                      {
+                        "color": "#F7F7F8FF",
+                        "position": 0.7
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "Ta8Xn",
+                  "name": "Pill",
+                  "width": "fill_container",
+                  "height": 62,
+                  "fill": "#F7F7F8",
+                  "cornerRadius": 100,
+                  "stroke": {
+                    "thickness": 1.5,
+                    "fill": "#E4E4E7"
+                  },
+                  "padding": 4,
+                  "justifyContent": "space_around",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RdGNU",
+                      "name": "Tab Home",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": "#3F3F46",
+                      "cornerRadius": 26,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "LXdSo",
+                          "name": "tab2Icon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "house",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oeyWV",
+                          "name": "tab2Label",
+                          "fill": "#FFFFFF",
+                          "content": "HOME",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AELGW",
+                      "name": "Tab Chef",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "cornerRadius": 26,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "SAWX9",
+                          "name": "tab1Icon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "chef-hat",
+                          "iconFontFamily": "lucide",
+                          "fill": "#A1A1AA"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kRAOA",
+                          "name": "tab1Label",
+                          "fill": "#A1A1AA",
+                          "content": "CHEF",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "500",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rbOP4",
+                      "name": "Tab Calendar",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "cornerRadius": 26,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "FFpgD",
+                          "name": "tab3Icon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "calendar",
+                          "iconFontFamily": "lucide",
+                          "fill": "#A1A1AA"
+                        },
+                        {
+                          "type": "text",
+                          "id": "TCloD",
+                          "name": "tab3Label",
+                          "fill": "#A1A1AA",
+                          "content": "CALENDAR",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "500",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HhCss",
+                      "name": "Tab Profile",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "cornerRadius": 26,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "bU9qU",
+                          "name": "tab4Icon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "user",
+                          "iconFontFamily": "lucide",
+                          "fill": "#A1A1AA"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fowur",
+                          "name": "tab4Label",
+                          "fill": "#A1A1AA",
+                          "content": "PROFILE",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "500",
+                          "letterSpacing": 0.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
